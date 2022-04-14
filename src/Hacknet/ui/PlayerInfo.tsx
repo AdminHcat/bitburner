@@ -32,21 +32,21 @@ export function PlayerInfo(props: IProps): React.ReactElement {
   return (
     <>
       <Typography>
-        Money:
+        金钱:
         <Money money={props.player.money} />
       </Typography>
 
       {hasServers && (
         <>
           <Typography>
-            Hashes: <Hashes hashes={props.player.hashManager.hashes} /> /{" "}
+            彩虹表: <Hashes hashes={props.player.hashManager.hashes} /> /{" "}
             <Hashes hashes={props.player.hashManager.capacity} />
           </Typography>
         </>
       )}
 
       <Typography>
-        Total Hacknet {hasServers ? "Server" : "Node"} Production: {prod}
+        Hacknet {hasServers ? "服务器" : "节点"} 总产量: {prod}
       </Typography>
     </>
   );

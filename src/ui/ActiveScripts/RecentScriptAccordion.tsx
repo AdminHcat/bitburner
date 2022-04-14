@@ -70,7 +70,7 @@ export function RecentScriptAccordion(props: IProps): React.ReactElement {
             <TableBody>
               <TableRow>
                 <TableCell className={classes.noborder}>
-                  <Typography>└ Threads:</Typography>
+                  <Typography>└ 线程:</Typography>
                 </TableCell>
                 <TableCell className={classes.noborder}>
                   <Typography>{numeralWrapper.formatThreads(recentScript.runningScript.threads)}</Typography>
@@ -83,7 +83,7 @@ export function RecentScriptAccordion(props: IProps): React.ReactElement {
               </TableRow>
               <TableRow>
                 <TableCell className={classes.noborder}>
-                  <Typography>└ Online Time:</Typography>
+                  <Typography>└ 在线时间:</Typography>
                 </TableCell>
                 <TableCell className={classes.noborder}>
                   <Typography>
@@ -93,7 +93,7 @@ export function RecentScriptAccordion(props: IProps): React.ReactElement {
               </TableRow>
               <TableRow>
                 <TableCell className={classes.noborder}>
-                  <Typography>└ Offline Time:</Typography>
+                  <Typography>└ 离线时间:</Typography>
                 </TableCell>
                 <TableCell className={classes.noborder}>
                   <Typography>
@@ -103,7 +103,7 @@ export function RecentScriptAccordion(props: IProps): React.ReactElement {
               </TableRow>
               <TableRow>
                 <TableCell className={classes.noborder}>
-                  <Typography>└ Total online production:</Typography>
+                  <Typography>└ 在线生产总量:</Typography>
                 </TableCell>
                 <TableCell className={classes.noborder} align="left">
                   <Typography>
@@ -122,7 +122,7 @@ export function RecentScriptAccordion(props: IProps): React.ReactElement {
 
               <TableRow>
                 <TableCell className={classes.noborder}>
-                  <Typography>└ Online production rate:</Typography>
+                  <Typography>└ 在线生产率:</Typography>
                 </TableCell>
                 <TableCell className={classes.noborder} align="left">
                   <Typography>
@@ -139,7 +139,7 @@ export function RecentScriptAccordion(props: IProps): React.ReactElement {
 
               <TableRow>
                 <TableCell className={classes.noborder}>
-                  <Typography>└ Total offline production:</Typography>
+                  <Typography>└ 离线生产总量:</Typography>
                 </TableCell>
                 <TableCell className={classes.noborder} align="left">
                   <Typography>

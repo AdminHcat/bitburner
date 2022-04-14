@@ -107,7 +107,7 @@ export function Stats(props: IProps): React.ReactElement {
           Money Lost From Hospitalizations: <Money money={props.bladeburner.moneyLost} />
         </Typography>
         <br />
-        <Typography>Current City: {props.bladeburner.city}</Typography>
+        <Typography>当前城市: {props.bladeburner.city}</Typography>
         <Box display="flex">
           <Tooltip
             title={

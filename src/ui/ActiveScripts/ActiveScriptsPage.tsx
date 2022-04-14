@@ -19,9 +19,7 @@ export function ActiveScriptsPage(props: IProps): React.ReactElement {
   return (
     <>
       <Typography>
-        This page displays a list of all of your scripts that are currently running across every machine. It also
-        provides information about each script's production. The scripts are categorized by the hostname of the servers
-        on which they are running.
+        此页面显示当前在每台机器上运行的所有脚本的列表。 它还提供有关每个脚本制作的信息。 这些脚本按运行它们的服务器的主机名进行分类。
       </Typography>
 
       <ScriptProduction />

@@ -119,7 +119,7 @@ export function HacknetRoot(props: IProps): React.ReactElement {
 
   return (
     <>
-      <Typography variant="h4">Hacknet {hasHacknetServers(props.player) ? "Servers" : "Nodes"}</Typography>
+      <Typography variant="h4">黑客网络 {hasHacknetServers(props.player) ? "服务器" : "节点"}</Typography>
       <GeneralInfo hasHacknetServers={hasHacknetServers(props.player)} />
 
       <PurchaseButton cost={purchaseCost} multiplier={purchaseMultiplier} onClick={handlePurchaseButtonClick} />

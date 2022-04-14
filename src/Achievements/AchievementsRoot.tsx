@@ -23,7 +23,7 @@ export function AchievementsRoot(): JSX.Element {
   const classes = useStyles();
   return (
     <div className={classes.root} style={{ width: "90%" }}>
-      <Typography variant="h4">Achievements</Typography>
+      <Typography variant="h4">成就</Typography>
       <AchievementList achievements={Object.values(achievements)} playerAchievements={Player.achievements} />
     </div>
   );

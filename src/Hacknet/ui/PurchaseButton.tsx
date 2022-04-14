@@ -32,7 +32,7 @@ export function PurchaseButton(props: IProps): React.ReactElement {
   } else {
     text = (
       <>
-        Purchase Hacknet Node -&nbsp;
+        购买Hacknet节点 -&nbsp;
         <Money money={cost} player={Player} />
       </>
     );

@@ -462,7 +462,7 @@ export function GameOptionsRoot(props: IProps): React.ReactElement {
                               : "success"
                           }
                         >
-                          Timestamp&nbsp;format:&nbsp;
+                          时间戳格式:&nbsp;
                         </Typography>
                       ),
                     }}
@@ -484,8 +484,8 @@ export function GameOptionsRoot(props: IProps): React.ReactElement {
             </ListItem>
 
             <ListItem>
-              <Tooltip title={<Typography>Sets the locale for displaying numbers.</Typography>}>
-                <Typography>Locale&nbsp;</Typography>
+              <Tooltip title={<Typography>设置显示数字的地区设置</Typography>}>
+                <Typography>地区&nbsp;</Typography>
               </Tooltip>
               <Select value={locale} onChange={handleLocaleChange}>
                 <MenuItem value="en">en</MenuItem>
@@ -509,7 +509,7 @@ export function GameOptionsRoot(props: IProps): React.ReactElement {
           {!location.href.startsWith("file://") && (
             <>
               <ListItem>
-                <Typography>danielyxie / BigD (Original developer): </Typography>
+                <Typography>danielyxie / BigD (原开发者): </Typography>
                 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
                   <input type="hidden" name="cmd" value="_s-xclick" />
                   <input
@@ -540,12 +540,12 @@ export function GameOptionsRoot(props: IProps): React.ReactElement {
         <Box sx={{ display: "grid", width: "fit-content", height: "fit-content" }}>
           <Box sx={{ display: "grid", gridTemplateColumns: "1fr 1fr" }}>
             <Button onClick={() => props.save()} startIcon={<SaveIcon />}>
-              Save Game
+              保存游戏
             </Button>
             <DeleteGameButton />
           </Box>
           <Box sx={{ display: "grid", gridTemplateColumns: "1fr 1fr" }}>
-            <Tooltip title={<Typography>Export your game to a text file.</Typography>}>
+            <Tooltip title={<Typography>将游戏导出到文本文件。</Typography>}>
               <Button onClick={() => props.export()} startIcon={<DownloadIcon />}>
                 Export Game
               </Button>
@@ -553,9 +553,9 @@ export function GameOptionsRoot(props: IProps): React.ReactElement {
             <Tooltip
               title={
                 <Typography>
-                  Import your game from a text file.
+                  从文本文件导入游戏。
                   <br />
-                  This will <strong>overwrite</strong> your current game. Back it up first!
+                  这将<strong>覆盖</strong>你的当前游戏，请先备份!
                 </Typography>
               }
             >
@@ -641,13 +641,13 @@ export function GameOptionsRoot(props: IProps): React.ReactElement {
           </Box>
           <Box>
             <Link href="https://github.com/danielyxie/bitburner/issues/new" target="_blank">
-              <Typography>Report bug</Typography>
+              <Typography>反馈Bug</Typography>
             </Link>
             <Link href="https://bitburner.readthedocs.io/en/latest/changelog.html" target="_blank">
-              <Typography>Changelog</Typography>
+              <Typography>更新日志</Typography>
             </Link>
             <Link href="https://bitburner.readthedocs.io/en/latest/index.html" target="_blank">
-              <Typography>Documentation</Typography>
+              <Typography>文档</Typography>
             </Link>
             <Link href="https://discord.gg/TFc3hKD" target="_blank">
               <Typography>Discord</Typography>

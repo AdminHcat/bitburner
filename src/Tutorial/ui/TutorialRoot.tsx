@@ -14,9 +14,9 @@ export function TutorialRoot(props: IProps): React.ReactElement {
   const [confirmResetOpen, setConfirmResetOpen] = useState(false);
   return (
     <>
-      <Typography variant="h4">Tutorial / Documentation</Typography>
+      <Typography variant="h4">教程 / 文档</Typography>
       <Box m={2}>
-        <Button onClick={() => setConfirmResetOpen(true)}>Soft reset and Restart tutorial</Button>
+        <Button onClick={() => setConfirmResetOpen(true)}>软件重置并重启教程</Button>
         <ConfirmationModal
           open={confirmResetOpen}
           onClose={() => setConfirmResetOpen(false)}

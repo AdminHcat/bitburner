@@ -349,7 +349,7 @@ export function SidebarRoot(props: IProps): React.ReactElement {
         <ListItemText
           primary={
             <Tooltip title={hash()}>
-              <Typography>Bitburner v{CONSTANTS.VersionString}</Typography>
+              <Typography>Bitburner v{CONSTANTS.VersionString} CN</Typography>
             </Tooltip>
           }
         />
@@ -362,7 +362,7 @@ export function SidebarRoot(props: IProps): React.ReactElement {
               <ComputerIcon color="primary" />
             </Tooltip>
           </ListItemIcon>
-          <ListItemText primary={<Typography>Hacking</Typography>} />
+          <ListItemText primary={<Typography>非法入侵</Typography>} />
           {hackingOpen ? <ExpandLessIcon color="primary" /> : <ExpandMoreIcon color="primary" />}
         </ListItem>
         <Collapse in={hackingOpen} timeout="auto" unmountOnExit>
@@ -385,7 +385,7 @@ export function SidebarRoot(props: IProps): React.ReactElement {
               </ListItemIcon>
               <ListItemText>
                 <Typography color={flashTerminal ? "error" : props.page !== Page.Terminal ? "secondary" : "primary"}>
-                  Terminal
+                  终端
                 </Typography>
               </ListItemText>
             </ListItem>
@@ -405,7 +405,7 @@ export function SidebarRoot(props: IProps): React.ReactElement {
               </ListItemIcon>
               <ListItemText>
                 <Typography color={props.page !== Page.ScriptEditor ? "secondary" : "primary"}>
-                  Script Editor
+                  脚本编辑器
                 </Typography>
               </ListItemText>
             </ListItem>
@@ -429,7 +429,7 @@ export function SidebarRoot(props: IProps): React.ReactElement {
                 <Typography
                   color={flashActiveScripts ? "error" : props.page !== Page.ActiveScripts ? "secondary" : "primary"}
                 >
-                  Active Scripts
+                  Active 脚本
                 </Typography>
               </ListItemText>
             </ListItem>
@@ -450,7 +450,7 @@ export function SidebarRoot(props: IProps): React.ReactElement {
               </ListItemIcon>
               <ListItemText>
                 <Typography color={props.page !== Page.CreateProgram ? "secondary" : "primary"}>
-                  Create Program
+                  创建程序
                 </Typography>
               </ListItemText>
             </ListItem>
@@ -470,7 +470,7 @@ export function SidebarRoot(props: IProps): React.ReactElement {
                 </ListItemIcon>
                 <ListItemText>
                   <Typography color={props.page !== Page.StaneksGift ? "secondary" : "primary"}>
-                    Stanek's Gift
+                    斯坦尼克的礼物
                   </Typography>
                 </ListItemText>
               </ListItem>
@@ -504,7 +504,7 @@ export function SidebarRoot(props: IProps): React.ReactElement {
             </ListItemIcon>
             <ListItemText>
               <Typography color={flashStats ? "error" : props.page !== Page.Stats ? "secondary" : "primary"}>
-                Stats
+                统计
               </Typography>
             </ListItemText>
           </ListItem>
@@ -578,7 +578,7 @@ export function SidebarRoot(props: IProps): React.ReactElement {
             </ListItemIcon>
             <ListItemText>
               <Typography color={flashHacknet ? "error" : props.page !== Page.Hacknet ? "secondary" : "primary"}>
-                Hacknet
+                黑客网
               </Typography>
             </ListItemText>
           </ListItem>
@@ -611,7 +611,7 @@ export function SidebarRoot(props: IProps): React.ReactElement {
               <PublicIcon color="primary" />
             </Tooltip>
           </ListItemIcon>
-          <ListItemText primary={<Typography>World</Typography>} />
+          <ListItemText primary={<Typography>世界</Typography>} />
           {worldOpen ? <ExpandLessIcon color="primary" /> : <ExpandMoreIcon color="primary" />}
         </ListItem>
         <Collapse in={worldOpen} timeout="auto" unmountOnExit>
@@ -631,7 +631,7 @@ export function SidebarRoot(props: IProps): React.ReactElement {
             </ListItemIcon>
             <ListItemText>
               <Typography color={flashCity ? "error" : props.page !== Page.City ? "secondary" : "primary"}>
-                City
+                城市
               </Typography>
             </ListItemText>
           </ListItem>
@@ -649,7 +649,7 @@ export function SidebarRoot(props: IProps): React.ReactElement {
               </Tooltip>
             </ListItemIcon>
             <ListItemText>
-              <Typography color={props.page !== Page.Travel ? "secondary" : "primary"}>Travel</Typography>
+              <Typography color={props.page !== Page.Travel ? "secondary" : "primary"}>旅行</Typography>
             </ListItemText>
           </ListItem>
           {canJob && (
@@ -668,7 +668,7 @@ export function SidebarRoot(props: IProps): React.ReactElement {
                 </Tooltip>
               </ListItemIcon>
               <ListItemText>
-                <Typography color={props.page !== Page.Job ? "secondary" : "primary"}>Job</Typography>
+                <Typography color={props.page !== Page.Job ? "secondary" : "primary"}>工作</Typography>
               </ListItemText>
             </ListItem>
           )}
@@ -688,7 +688,7 @@ export function SidebarRoot(props: IProps): React.ReactElement {
                 </Tooltip>
               </ListItemIcon>
               <ListItemText>
-                <Typography color={props.page !== Page.StockMarket ? "secondary" : "primary"}>Stock Market</Typography>
+                <Typography color={props.page !== Page.StockMarket ? "secondary" : "primary"}>股票市场</Typography>
               </ListItemText>
             </ListItem>
           )}
@@ -728,7 +728,7 @@ export function SidebarRoot(props: IProps): React.ReactElement {
                 </Tooltip>
               </ListItemIcon>
               <ListItemText>
-                <Typography color={props.page !== Page.Corporation ? "secondary" : "primary"}>Corp</Typography>
+                <Typography color={props.page !== Page.Corporation ? "secondary" : "primary"}>公司</Typography>
               </ListItemText>
             </ListItem>
           )}
@@ -748,7 +748,7 @@ export function SidebarRoot(props: IProps): React.ReactElement {
                 </Tooltip>
               </ListItemIcon>
               <ListItemText>
-                <Typography color={props.page !== Page.Gang ? "secondary" : "primary"}>Gang</Typography>
+                <Typography color={props.page !== Page.Gang ? "secondary" : "primary"}>帮派</Typography>
               </ListItemText>
             </ListItem>
           )}
@@ -761,7 +761,7 @@ export function SidebarRoot(props: IProps): React.ReactElement {
               <LiveHelpIcon color="primary" />
             </Tooltip>
           </ListItemIcon>
-          <ListItemText primary={<Typography>Help</Typography>} />
+          <ListItemText primary={<Typography>帮助</Typography>} />
           {helpOpen ? <ExpandLessIcon color="primary" /> : <ExpandMoreIcon color="primary" />}
         </ListItem>
         <Collapse in={helpOpen} timeout="auto" unmountOnExit>
@@ -779,7 +779,7 @@ export function SidebarRoot(props: IProps): React.ReactElement {
               </Tooltip>
             </ListItemIcon>
             <ListItemText>
-              <Typography color={props.page !== Page.Milestones ? "secondary" : "primary"}>Milestones</Typography>
+              <Typography color={props.page !== Page.Milestones ? "secondary" : "primary"}>里程碑</Typography>
             </ListItemText>
           </ListItem>
           <ListItem
@@ -797,7 +797,7 @@ export function SidebarRoot(props: IProps): React.ReactElement {
             </ListItemIcon>
             <ListItemText>
               <Typography color={flashTutorial ? "error" : props.page !== Page.Tutorial ? "secondary" : "primary"}>
-                Tutorial
+                教程
               </Typography>
             </ListItemText>
           </ListItem>
@@ -815,7 +815,7 @@ export function SidebarRoot(props: IProps): React.ReactElement {
               </Tooltip>
             </ListItemIcon>
             <ListItemText>
-              <Typography color={props.page !== Page.Achievements ? "secondary" : "primary"}>Achievements</Typography>
+              <Typography color={props.page !== Page.Achievements ? "secondary" : "primary"}>成就</Typography>
             </ListItemText>
           </ListItem>
           <ListItem
@@ -832,7 +832,7 @@ export function SidebarRoot(props: IProps): React.ReactElement {
               </Tooltip>
             </ListItemIcon>
             <ListItemText>
-              <Typography color={props.page !== Page.Options ? "secondary" : "primary"}>Options</Typography>
+              <Typography color={props.page !== Page.Options ? "secondary" : "primary"}>选项</Typography>
             </ListItemText>
           </ListItem>
           {process.env.NODE_ENV === "development" && (
@@ -851,7 +851,7 @@ export function SidebarRoot(props: IProps): React.ReactElement {
                 </Tooltip>
               </ListItemIcon>
               <ListItemText>
-                <Typography color={props.page !== Page.DevMenu ? "secondary" : "primary"}>Dev</Typography>
+                <Typography color={props.page !== Page.DevMenu ? "secondary" : "primary"}>开发</Typography>
               </ListItemText>
             </ListItem>
           )}

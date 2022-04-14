@@ -137,7 +137,7 @@ export function HacknetNodeElem(props: IProps): React.ReactElement {
   }
   let upgradeCoresButton;
   if (node.cores >= HacknetNodeConstants.MaxCores) {
-    upgradeCoresButton = <Button disabled>MAX CORES</Button>;
+    upgradeCoresButton = <Button disabled>核心上限</Button>;
   } else {
     let multiplier = 0;
     if (purchaseMult === "MAX") {
@@ -178,7 +178,7 @@ export function HacknetNodeElem(props: IProps): React.ReactElement {
           </TableRow>
           <TableRow>
             <TableCell>
-              <Typography>Production:</Typography>
+              <Typography>产量:</Typography>
             </TableCell>
             <TableCell colSpan={2}>
               <Typography>
@@ -189,7 +189,7 @@ export function HacknetNodeElem(props: IProps): React.ReactElement {
           </TableRow>
           <TableRow>
             <TableCell>
-              <Typography>Level:</Typography>
+              <Typography>等级:</Typography>
             </TableCell>
             <TableCell>
               <Typography>{node.level}</Typography>
@@ -198,7 +198,7 @@ export function HacknetNodeElem(props: IProps): React.ReactElement {
           </TableRow>
           <TableRow>
             <TableCell>
-              <Typography>RAM:</Typography>
+              <Typography>内存:</Typography>
             </TableCell>
             <TableCell>
               <Typography>{numeralWrapper.formatRAM(node.ram)}</Typography>
@@ -207,7 +207,7 @@ export function HacknetNodeElem(props: IProps): React.ReactElement {
           </TableRow>
           <TableRow>
             <TableCell>
-              <Typography>Cores:</Typography>
+              <Typography>核心:</Typography>
             </TableCell>
             <TableCell>
               <Typography>{node.cores}</Typography>
